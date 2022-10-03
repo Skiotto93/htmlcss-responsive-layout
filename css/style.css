@@ -19,8 +19,7 @@
 --------------*/
 .container {
     max-width: 71.25rem;
-    padding-left: .625rem;
-    padding-right: .625rem;
+    padding: 0 1.25rem;
     margin: auto;
 }
 
@@ -31,6 +30,8 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
 }
 
 .space-between {
@@ -39,6 +40,12 @@
 .list-inline {
     display: flex;
     list-style: none;
+}
+.col {
+    padding: 0 .625rem;
+}
+section {
+    padding: 1.875rem 0;
 }
 /*--------------
     HEADER
@@ -53,7 +60,7 @@ header {
     display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     .hamburger {
         display: none;
     }
@@ -71,10 +78,38 @@ header {
 }
 .highlights .col {
     width: 100%;
+    margin: .625rem 0;
 }
 .highlights .card-debug {
     margin: auto;
 }
+@media screen and (min-width:768px) {
+    .highlights .col {
+        width: calc(100% / 3);
+    }
+    .highlights .col:first-child {
+        width: calc((100% / 3) * 2);
+    }
+}
+  /*Strategic*/
+.strategic {
+    background-color: var(--secondary-color);
+}
+
+.strategic .col {
+    width: 100%;
+    margin: .625rem 0;
+}
+@media screen and (min-width: 992px) {
+    .strategic .col {
+        width: calc(100% / 2 - 0.625rem);
+    }
+    .strategic .row:last-child {
+        align-items: flex-end;
+    }    
+}
+  /*Who we are*/
+
 /*--------------
     FOOTER
 --------------*/
