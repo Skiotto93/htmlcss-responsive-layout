@@ -6,3 +6,75 @@
     margin: 0;
     padding: 0;
 }
+/*--------------
+    VARIEBLES
+--------------*/
+:root {
+    --first-color: #0084fd;
+    --first-color-light: #b5ddff;
+    --secondary-color: #9792e4;
+}
+/*--------------
+    COMMON
+--------------*/
+.container {
+    max-width: 71.25rem;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+.list-inline {
+    display: flex;
+    list-style: none;
+}
+/*--------------
+    HEADER
+--------------*/
+header {
+    background-color: var(--first-color);
+    padding: 1.25rem 0;
+    color: white;
+}
+
+.main-nav {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .main-nav {
+        display: block;
+    }
+}
+/*--------------
+    MAIN
+--------------*/
+  /*Highlights*/
+.card-debug {
+    background-color: var(--first-color-light);
+    height: 6.25rem;
+}
+.highlights .col {
+    width: 100%;
+}
+.highlights .card-debug {
+    margin: auto;
+}
+/*--------------
+    FOOTER
+--------------*/
