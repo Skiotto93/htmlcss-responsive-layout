@@ -121,7 +121,35 @@ header {
     color: white;
 }
   /*Benefits*/
-
+.benefits {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.benefits .container {
+    margin: auto;
+    text-align: center;
+}
+.benefits .col {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    margin: 1.875rem 0;
+}
+.benefits h2 {
+    margin-bottom: 1.875rem;
+}
+@media screen and (min-width:768px) {
+    .benefits .col {
+        width: calc(100% / 2 - 1.875rem);
+        margin: .9375rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .benefits .col {
+        width: calc(100% / 3 - 2.8125rem);
+    }
+}
 /*--------------
     FOOTER
 --------------*/
