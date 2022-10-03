@@ -150,6 +150,60 @@ header {
         width: calc(100% / 3 - 2.8125rem);
     }
 }
+  /*About us*/
+.aboutus h2, h3 {
+    color: var(--secondary-color);
+}
+.aboutus button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: .625rem;
+    border-radius: .9375rem;
+}
+@media screen and (min-width:768px) {
+    .col-big {
+        width: 60%;
+    }
+    .col-small {
+        width: 40%;
+    }
+}
+  /*Start*/
+.start {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.start span {
+    color: #d5d4f4;
+}
+.start h3 {
+    color: white;
+    font-size: 1.875rem;
+}
+.start h2 {
+    color: #fdc15f;
+    font-size: 3.125rem;
+}
+.start .container {
+    text-align: center;
+}
+.paragraph {
+    max-width: 30rem;
+    margin: auto;
+}
 /*--------------
     FOOTER
 --------------*/
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 2.1875rem 0;
+    text-align: center;
+}
+footer .container a {
+    color: var(--secondary-color);
+}
+footer .container p {
+    margin-bottom: 4.0625rem;
+}
