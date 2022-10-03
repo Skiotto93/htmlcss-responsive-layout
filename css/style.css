@@ -109,6 +109,18 @@ header {
     }    
 }
   /*Who we are*/
+.whoweare .container {
+    margin: auto;
+    text-align: center;
+}
+.title {
+    color: var(--secondary-color);
+}
+.whoweare .col {
+    background-color: var(--secondary-color);
+    color: white;
+}
+  /*Benefits*/
 
 /*--------------
     FOOTER
