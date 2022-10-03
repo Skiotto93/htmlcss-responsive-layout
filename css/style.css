@@ -30,8 +30,7 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -0.625rem;
-    margin-right: -0.625rem;
+
 }
 
 .space-between {
@@ -55,7 +54,16 @@ header {
     padding: 1.25rem 0;
     color: white;
 }
-
+header .hamburger {
+    background-color: var(--first-color);
+    color: white;
+    border: none;
+    font-size: 1.5625rem;
+    margin-right: 0.625rem;
+}
+.logo {
+    margin-left: 0.625rem;
+}
 .main-nav {
     display: none;
 }
@@ -123,10 +131,11 @@ header {
   /*Benefits*/
 .benefits {
     background-color: var(--secondary-color);
+}
+.benefits h2 {
     color: white;
 }
 .benefits .container {
-    margin: auto;
     text-align: center;
 }
 .benefits .col {
@@ -141,13 +150,12 @@ header {
 }
 @media screen and (min-width:768px) {
     .benefits .col {
-        width: calc(100% / 2 - 1.875rem);
-        margin: .9375rem;
+        width: calc(100% / 2);
     }
 }
 @media screen and (min-width: 992px) {
     .benefits .col {
-        width: calc(100% / 3 - 2.8125rem);
+        width: calc(100% / 3);
     }
 }
   /*About us*/
