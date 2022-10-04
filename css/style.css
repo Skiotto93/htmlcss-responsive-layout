@@ -28,6 +28,10 @@ body {
     padding: 0 1.25rem;
     margin: auto;
 }
+.containersmall {
+    max-width: 55rem;
+    margin: auto;
+}
 .flex {
     display: flex;
 }
