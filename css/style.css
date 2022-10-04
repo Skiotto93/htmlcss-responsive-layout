@@ -253,6 +253,9 @@ header .hamburger {
     .col-right {
         margin: auto;
     }
+    .whoweare .col-right {
+        text-align: left;
+    }
 }
 
   /*Benefits*/
