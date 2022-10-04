@@ -134,7 +134,7 @@ header .hamburger {
 }
 .highlights .image {
     width: 200px;
-    margin-bottom: -0.3125rem;
+    display: block;
 }
 .highlights .image img {
     width: 100%;
@@ -148,8 +148,20 @@ header .hamburger {
         width: calc(100% / 3 - 1.875rem);
     }
     .highlights .col:first-child {
-        width: calc((100% / 3) * 2);
+        width: calc((100% / 3) * 2 - .9375rem);
     }
+}
+@media screen and (min-width: 992px) {
+    .bestemmie {
+        display: flex;
+    }
+    .colleft {
+        width: 60%;
+    } 
+    .colright {
+        margin-top: 5.3125rem; 
+     }
+      
 }
   /*Strategic*/
 .strategic {
@@ -174,11 +186,22 @@ header .hamburger {
     background-color: white;
     border-radius: 1.875rem;
 }
+.colwhite p {
+    color: black;
+}
+.colwhite h4 {
+    font-size: 1.25rem;
+    padding: 1.5625rem 0;
+}
 .colwhite i {
-    margin: 2.5rem 0;
-    width: 8%;
-    background-color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+.buttonarrow {
     border-radius: 50%;
+    background-color: var(--secondary-color);
+    margin: 2.5rem 0;
+    padding: 1.5625rem;
+    border: none;
 }
 @media screen and (min-width: 992px) {
     .strategic .col {
@@ -208,7 +231,6 @@ header .hamburger {
 }
 .whoweare .image {
     margin: auto;
-    border-radius: 50%;
     padding: 1.875rem;
 }
 .whoweare img {
@@ -274,6 +296,28 @@ header .hamburger {
 .aboutus h2, h3 {
     color: var(--secondary-color);
 }
+.aboutus h2 {
+    font-size: 2.5rem;
+    margin-top: 3.75rem;
+}
+.aboutus h3 {
+    margin-bottom: 1.875rem;
+}
+.imagesmall {
+    width: 180px;
+    height: 180px;
+    margin-top: 3.125rem;
+    margin-bottom: 1.875rem;
+    position: relative;
+}
+.space {
+    margin-top: 3.75rem;
+}
+.imagesmall img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
 .aboutus button {
     background-color: var(--secondary-color);
     color: white;
@@ -281,12 +325,27 @@ header .hamburger {
     padding: .625rem;
     border-radius: .9375rem;
 }
+#quote {
+    color: var(--secondary-color);
+    font-size: 3.75rem;
+    position: absolute;
+    top: -0.625rem;
+    right: 0;
+}
 @media screen and (min-width:768px) {
     .col-big {
-        width: 60%;
+        width: 55%;
     }
     .col-small {
-        width: 40%;
+        width: 45%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .col-big {
+        width: 70%;
+    }
+    .col-small {
+        width: 30%;
     }
 }
   /*Start*/
@@ -300,10 +359,13 @@ header .hamburger {
 .start h3 {
     color: white;
     font-size: 1.875rem;
+    margin-top: 1.5625rem;
+    margin-bottom: 2.5rem;
 }
 .start h2 {
     color: #fdc15f;
     font-size: 3.125rem;
+    margin-bottom: 2.8125rem;
 }
 .start .container {
     text-align: center;
@@ -319,6 +381,13 @@ header .hamburger {
     border: none;
     border-radius: .9375rem;
     padding: .625rem 1.875rem;
+    margin: 2.5rem;
+}
+.copyright {
+    margin-bottom: 2.5rem;
+}
+.copyright a {
+    color: white;
 }
 /*--------------
     FOOTER
