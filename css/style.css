@@ -67,14 +67,9 @@ header .hamburger {
     color: white;
     border: none;
     font-size: 1.5625rem;
-    margin-right: 0.625rem;
-}
-.logo {
-    margin-left: 0.625rem;
 }
 .main-nav {
     display: none;
-    margin-right: 15px;
 }
 .main-nav li {
     align-items: center;
@@ -106,16 +101,36 @@ header .hamburger {
     MAIN
 --------------*/
   /*Highlights*/
-.card {
-    background-color: var(--first-color-light);
-    padding: 1.875rem 2.1875rem;
+.highlights .col:first-child {
+    padding-left: 1.875rem;
 }
+
 .highlights .col {
-    width: 100%;
     margin: .625rem 0;
+    background-color: var(--first-color-light);
+    border-radius: 20px;
 }
-.highlights .card {
-    margin: auto;
+.highlights .card h4 {
+    padding: 1.875rem 0;
+    color: var(--first-color);
+    font-size: 1.15rem;
+}
+.highlights .card p {
+    padding-bottom: 1.875rem;
+}
+.highlights .card .special {
+    padding-top: 1.875rem;
+}
+.btn-blue {
+    color: white;
+    padding: .625rem 1.875rem;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: var(--first-color);
+    margin-bottom: 2.5rem;
+}
+.btn-blue i {
+    padding-right: .625rem;
 }
 .image {
     width: 200px;
@@ -124,28 +139,46 @@ header .hamburger {
 .image img {
     width: 100%;
 }
+.special {
+    color: var(--first-color);
+    font-size: 4rem;
+}
 @media screen and (min-width:768px) {
     .highlights .col {
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 1.875rem);
     }
     .highlights .col:first-child {
         width: calc((100% / 3) * 2);
     }
 }
-@media screen and (min-width: 992px) {
-    .col {
-        display: flex;
-        
-    } 
-}
   /*Strategic*/
 .strategic {
     background-color: var(--secondary-color);
 }
-
+.imageplanning {
+    width: 100%;
+}
+.strategic h3, .strategic p {
+    color: white;
+}
+.strategic h3 {
+    padding-top: 5.625rem;
+    padding-bottom: 3.125rem;
+    font-size: 1.875rem;
+}
 .strategic .col {
     width: 100%;
     margin: .625rem 0;
+}
+.colwhite {
+    background-color: white;
+    border-radius: 1.875rem;
+}
+.colwhite i {
+    margin: 2.5rem 0;
+    width: 8%;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
 }
 @media screen and (min-width: 992px) {
     .strategic .col {
