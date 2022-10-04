@@ -132,11 +132,11 @@ header .hamburger {
 .btn-blue i {
     padding-right: .625rem;
 }
-.image {
+.highlights .image {
     width: 200px;
-    height: 270px;
+    margin-bottom: -0.3125rem;
 }
-.image img {
+.highlights .image img {
     width: 100%;
 }
 .special {
@@ -189,17 +189,43 @@ header .hamburger {
     }    
 }
   /*Who we are*/
-.whoweare .container {
-    margin: auto;
-    text-align: center;
-}
 .title {
+    padding: 2.5rem 0;
     color: var(--secondary-color);
+}
+.whoweare p {
+    padding-bottom: 3.125rem;
+}
+.whoweare .testimonial {
+    padding-bottom: 1.875rem;
 }
 .whoweare .col {
     background-color: var(--secondary-color);
     color: white;
+    border-radius: 3.125rem;
+    margin-bottom: 1.875rem;
+    padding-bottom: 1.25rem;
 }
+.whoweare .image {
+    margin: auto;
+    border-radius: 50%;
+    padding: 1.875rem;
+}
+.whoweare img {
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+}
+@media screen and (min-width:768px) {
+    .col-left {
+        display: flex;
+    }
+    .col-right {
+        margin: auto;
+    }
+}
+
   /*Benefits*/
 .benefits {
     background-color: var(--secondary-color);
