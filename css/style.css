@@ -39,7 +39,6 @@ body {
     justify-content: space-between;
 }
 .list-inline {
-    display: flex;
     list-style: none;
 }
 .col {
@@ -170,6 +169,9 @@ header .hamburger {
 .imageplanning {
     width: 100%;
 }
+.imageplanningsmall {
+    width: 50%;
+}
 .strategic h3, .strategic p {
     color: white;
 }
@@ -185,6 +187,7 @@ header .hamburger {
 .colwhite {
     background-color: white;
     border-radius: 1.875rem;
+    margin-left: 1.875rem;
 }
 .colwhite p {
     color: black;
